@@ -1,7 +1,9 @@
+package application;
+
+import model.entities.Product;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
 
 public class Program {
     public static void main(String[] args) {
@@ -16,27 +18,27 @@ public class Program {
             System.out.println(p.getName() + " - " + p.getPrice());
         }
 
-//        MyConsumer mc = new MyConsumer();
+//        model.entities.MyConsumer mc = new model.entities.MyConsumer();
 //        products.forEach(mc);
 
-//        Consumer<Product> SuperConsumer = new Consumer<Product>() {
+//        Consumer<model.entities.Product> SuperConsumer = new Consumer<model.entities.Product>() {
 //            @Override
-//            public void accept(Product product) {
+//            public void accept(model.entities.Product product) {
 //                product.setPrice(product.getPrice() * 1.10);
 //            }
 //        };
 //
 //        products.forEach(SuperConsumer);
 
-//        Consumer<Product> SuperConsumer = p -> p.setPrice(p.getPrice() * 1.10);
+//        Consumer<model.entities.Product> SuperConsumer = p -> p.setPrice(p.getPrice() * 1.10);
 //        products.forEach(SuperConsumer);
 
 
-//        products.forEach(Product::staticProductConsumer);
+//        products.forEach(model.entities.Product::staticProductConsumer);
 
-//        products.forEach(Product::nonStaticProductConsumer);
+//        products.forEach(model.entities.Product::nonStaticProductConsumer);
 
-//        Consumer<Product> cons = p -> p.setPrice(p.getPrice() * 1.10);
+//        Consumer<model.entities.Product> cons = p -> p.setPrice(p.getPrice() * 1.10);
 //        products.forEach(cons);
 
         products.forEach(p -> p.setPrice((p.getPrice() * 1.10)));

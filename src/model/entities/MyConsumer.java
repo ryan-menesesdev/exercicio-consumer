@@ -1,3 +1,5 @@
+package model.entities;
+
 import java.util.function.Consumer;
 
 public class MyConsumer implements Consumer<Product> {
