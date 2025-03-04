@@ -18,29 +18,6 @@ public class Program {
             System.out.println(p.getName() + " - " + p.getPrice());
         }
 
-//        model.entities.MyConsumer mc = new model.entities.MyConsumer();
-//        products.forEach(mc);
-
-//        Consumer<model.entities.Product> SuperConsumer = new Consumer<model.entities.Product>() {
-//            @Override
-//            public void accept(model.entities.Product product) {
-//                product.setPrice(product.getPrice() * 1.10);
-//            }
-//        };
-//
-//        products.forEach(SuperConsumer);
-
-//        Consumer<model.entities.Product> SuperConsumer = p -> p.setPrice(p.getPrice() * 1.10);
-//        products.forEach(SuperConsumer);
-
-
-//        products.forEach(model.entities.Product::staticProductConsumer);
-
-//        products.forEach(model.entities.Product::nonStaticProductConsumer);
-
-//        Consumer<model.entities.Product> cons = p -> p.setPrice(p.getPrice() * 1.10);
-//        products.forEach(cons);
-
         products.forEach(p -> p.setPrice((p.getPrice() * 1.10)));
 
         System.out.println();
